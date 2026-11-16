@@ -1,0 +1,54 @@
+{
+  "company": "Затишок",
+  "student": "Шкіндер Андрій Сергійович · КН-31 · Самостійна робота №2 · Варіант 6",
+  "menu": [
+    { "text": "Про нас", "href": "#about" },
+    { "text": "Меблі", "href": "#products" },
+    { "text": "Контакти", "href": "#contacts" }
+  ],
+  "about": {
+    "label": "Меблі від виробника",
+    "title": "Прості речі для затишного дому",
+    "text": "Затишок — майстерня меблів для щоденного життя. Виготовляємо столи, стільці та шафи з лаконічним дизайном для вашої оселі.",
+    "linkText": "Переглянути меблі",
+    "image": "/images/table.svg",
+    "imageAlt": "Ілюстрація дерев’яного обіднього столу"
+  },
+  "catalogTitle": "Наші меблі",
+  "products": [
+    {
+      "id": 1,
+      "name": "Стіл «Родинний»",
+      "type": "Столи",
+      "description": "Дерев’яний обідній стіл. Розмір: 120 × 80 × 75 см.",
+      "price": 6500,
+      "image": "/images/table.svg"
+    },
+    {
+      "id": 2,
+      "name": "Стілець «Комфорт»",
+      "type": "Стільці",
+      "description": "Стілець із дерев’яною спинкою. Розмір: 45 × 45 × 85 см.",
+      "price": 1800,
+      "image": "/images/chair.svg"
+    },
+    {
+      "id": 3,
+      "name": "Шафа «Лад»",
+      "type": "Шафи",
+      "description": "Дводверна шафа для одягу. Розмір: 100 × 55 × 190 см.",
+      "price": 9200,
+      "image": "/images/wardrobe.svg"
+    }
+  ],
+  "footer": {
+    "title": "Контакти",
+    "email": "info@zatyshok.example",
+    "note": "Навчальний сайт. Компанія, товари та контакти вигадані.",
+    "socialTitle": "Соціальні мережі",
+    "socials": [
+      { "name": "Instagram", "url": "https://www.instagram.com/" },
+      { "name": "Facebook", "url": "https://www.facebook.com/" }
+    ]
+  }
+}

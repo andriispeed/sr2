@@ -1,0 +1,44 @@
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: Arial, sans-serif; color: #302c26; background: #faf8f4; line-height: 1.6; }
+.container { width: min(1100px, 100% - 40px); margin: auto; }
+a { color: inherit; }
+header { background: #fff; border-bottom: 1px solid #ddd5ca; }
+.header-row, .footer-row { display: flex; justify-content: space-between; align-items: center; gap: 24px; }
+.header-row { padding: 18px 0; }
+.brand { font-size: 28px; font-weight: bold; text-decoration: none; }
+nav { display: flex; flex-wrap: wrap; gap: 10px; }
+nav a { padding: 6px 12px; text-decoration: none; border-radius: 4px; transition: background-color .2s, color .2s; }
+nav a:hover, nav a:focus-visible { background: #71533c; color: white; }
+.student { padding-bottom: 12px; font-size: 13px; color: #655e55; }
+.intro { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; padding: 56px 0; }
+h1 { font-size: 40px; line-height: 1.2; margin: 12px 0 20px; }
+h2 { font-size: 26px; }
+h3 { font-size: 21px; margin: 8px 0; }
+.label { color: #71533c; font-size: 14px; margin: 0; }
+img { display: block; width: 100%; border-radius: 6px; }
+.button { display: inline-block; background: #71533c; color: white; padding: 10px 20px; margin-top: 12px; border-radius: 4px; text-decoration: none; }
+.button:hover, .button:focus-visible { background: #4e3828; }
+.catalog { padding-bottom: 56px; }
+.products { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.product { background: white; border: 1px solid #ddd5ca; border-radius: 6px; overflow: hidden; }
+.product img { border-radius: 0; aspect-ratio: 4 / 3; object-fit: cover; }
+.product-info { padding: 20px; }
+.price { font-size: 20px; font-weight: bold; margin-bottom: 0; }
+footer { background: #eee7dc; padding: 28px 0; }
+.footer-row { align-items: flex-start; }
+footer h2 { font-size: 20px; margin-top: 0; }
+footer p { max-width: 450px; font-size: 13px; }
+section, footer { scroll-margin-top: 20px; }
+@media (max-width: 800px) {
+  .intro { gap: 24px; }
+  h1 { font-size: 32px; }
+  .products { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .header-row, .footer-row { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .intro, .products { grid-template-columns: 1fr; }
+  .intro { padding: 32px 0; }
+  h1 { font-size: 30px; }
+  nav a { padding: 6px 10px; }
+}
